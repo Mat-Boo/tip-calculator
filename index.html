@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Tip calculator app</title>
+</head>
+<body>
+  <img src="./images/logo.svg" alt="logo" class="logo">
+  <div class="billBox">
+    <div class="billBox1">
+      <div class="bill">
+        <h2>Bill</h2>
+        <div class="billPriceBox">
+          <img src="./images/icon-dollar.svg" alt="dollar" class="dollar">
+          <input type="number" id="billPrice" name="billPrice">
+        </div>
+      </div>
+      <div>
+        <h2>Select Tip %</h2>
+        <div>
+          <ul class="tipsList">
+            <li class="tip" id="5">5%</li>
+            <li class="tip" id="10">10%</li>
+            <li class="tip" id="15">15%</li>
+            <li class="tip" id="25">25%</li>
+            <li class="tip" id="50">50%</li>
+            <li class="tip customTip" id="custom">
+              <input type="number" id="customInput" placeholder="Custom">
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <h2>Number of People</h2>
+        <div class="nbPeopleBox">
+          <img src="./images/icon-person.svg" alt="person" class="person">
+          <input type="number" id="nbPeople" name="nbPeople">
+        </div>
+      </div>
+    </div>
+    <div class="tipTotalBox">
+      <div class="tipTotalBoxWithoutReset">
+        <div class="tipTotalBox1">
+          <div>
+            <h3>Tip Amount</h3>
+            <p>/ person</p>
+          </div>
+          <div class="tipAmount">
+            0 €
+          </div>
+        </div>
+        <div class="tipTotalBox2">
+          <div>
+            <h3>Total</h3>
+            <p>/ person</p>
+          </div>
+          <div class="total">
+            0 €
+          </div>
+        </div>
+      </div>
+      <p id="resetBtn">RESET</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

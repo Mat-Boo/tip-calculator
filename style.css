@@ -1,0 +1,204 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #c5e4e7;
+  font-family: "Space Mono", monospace;
+  font-size: 14px;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.billBox {
+  background: white;
+  border-radius: 10px 10px 0 0;
+  padding: 5px 40px 5px 40px;
+}
+
+h2 {
+  color: #7f9c9f;
+  font-size: 1.1em;
+}
+
+.billPriceBox, .nbPeopleBox {
+  position: relative;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.dollar, .person {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 3%;
+}
+
+#billPrice, #nbPeople {
+  width: 100%;
+  padding: 2%;
+  border: none;
+  background: #f4fafa;
+  font-size: 1.8em;
+  text-align: end;
+}
+
+.tipsList {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  font-weight: 700;
+}
+
+.tip {
+  font-size: 1.5em;
+  background: #00494d;
+  color: white;
+  width: 150px;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 8px;
+  text-align: center;
+}
+
+.customTip {
+  background: #f4fafa;
+  color: #5e7a7d;
+}
+
+#customInput {
+  width: 98%;
+  border: none;
+  font-size: 1em;
+  text-align: center;
+  font-family: "Space Mono", monospace;
+  background: #f4fafa;
+  color: #5e7a7d;
+}
+
+.pushTip {
+  background: #26c0ab;
+  color: #00494d;
+}
+
+.pushTipCustom {
+  background: #26c0ab;
+  color: #00494d;
+}
+
+.tipTotalBox {
+  background: #00494d;
+  padding: 30px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+h3 {
+  color: white;
+  margin: 0;
+}
+
+h3 + p {
+  color: #5e7a7d;
+  font-weight: 700;
+  margin: 0;
+}
+
+.tipTotalBox1, .tipTotalBox2 {
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tipAmount, .total {
+  font-size: 2em;
+  color: #26c0ab;
+  font-weight: 700;
+}
+
+#resetBtn {
+  background: #26c0ab;
+  color: #00494d;
+  font-size: 1.3em;
+  font-weight: 700;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+          appearance: none;
+}
+
+@media screen and (min-width: 400px) {
+  .billBox {
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .billBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 80%;
+    padding: 5px 20px 5px 20px;
+  }
+  .billBox1, .tipTotalBox {
+    width: 50%;
+    margin: 30px;
+  }
+  .tip {
+    width: 100px;
+  }
+  .tipAmount, .total {
+    font-size: 3em;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .billBox {
+    width: 1064px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

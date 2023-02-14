@@ -1,0 +1,187 @@
+$strongCyan: hsl(172, 67%, 45%);
+$veryDarkCyan: hsl(183, 100%, 15%);
+$darkGrayishCyan: hsl(186, 14%, 43%);
+$darkGrayishCyan2: hsl(184, 14%, 56%);
+$lightGrayishCyan: hsl(185, 41%, 84%);
+$lightGrayishCyan2: hsl(189, 41%, 97%);
+$mainFont: 'Space Mono', monospace;
+
+body {
+    margin: 0;
+    padding: 0;
+    background: $lightGrayishCyan;
+    font-family: $mainFont;
+    font-size: 14px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+.billBox {
+    background: white;
+    border-radius: 10px 10px 0 0;
+    padding: 5px 40px 5px 40px;
+}
+
+h2 {
+    color: $darkGrayishCyan2;
+    font-size: 1.1em;
+}
+
+.billPriceBox, .nbPeopleBox {
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.dollar, .person {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 3%;
+}
+
+#billPrice, #nbPeople {
+    width: 100%;
+    padding: 2%;
+    border: none;
+    background: $lightGrayishCyan2;
+    font-size: 1.8em;
+    text-align: end;
+}
+
+.tipsList {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    font-weight: 700;
+}
+
+.tip {
+    font-size: 1.5em;
+    background: $veryDarkCyan;
+    color: white;
+    width: 150px;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 8px;
+    text-align: center;    
+}
+
+.customTip {
+    background: $lightGrayishCyan2;
+    color: $darkGrayishCyan;
+}
+
+#customInput {
+    width: 98%;
+    border: none;
+    font-size: 1em;
+    text-align: center;
+    font-family: $mainFont;
+    background: $lightGrayishCyan2;
+    color: $darkGrayishCyan;
+}
+
+.pushTip {
+    background: $strongCyan;
+    color: $veryDarkCyan;
+}
+
+.pushTipCustom {
+    background: $strongCyan;
+    color: $veryDarkCyan;
+}
+
+.tipTotalBox {
+    background: $veryDarkCyan;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h3 {
+    color: white;
+    margin: 0;
+}
+
+h3+p {
+    color: $darkGrayishCyan;
+    font-weight: 700;
+    margin: 0;
+}
+
+.tipTotalBox1, .tipTotalBox2 {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tipAmount, .total {
+    font-size: 2em;
+    color: $strongCyan;
+    font-weight: 700;
+}
+
+#resetBtn {
+    background: $strongCyan;
+    color: $veryDarkCyan;
+    font-size: 1.3em;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+@media screen and (min-width: 400px) {
+    .billBox {
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .billBox {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        padding: 5px 20px 5px 20px;
+    }
+
+    .billBox1, .tipTotalBox {
+        width: 50%;
+        margin: 30px;
+    }
+
+    .tip {
+        width: 100px;
+    }
+
+    .tipAmount, .total {
+        font-size: 3em;
+    }
+
+
+}
+
+@media screen and (min-width: 1280px) {
+    .billBox {
+        width: 1064px;
+    }
+}
